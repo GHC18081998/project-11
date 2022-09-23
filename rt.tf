@@ -19,6 +19,6 @@ route_table_id = "${aws_route_table.rt.id}"
 
 # Associating Route Table
 resource "aws_route_table_association" "rt2" {
-subnet_id = "${aws_subnet.app-pub-sub-2.id}"
+subnet_id = "${aws_subnet.app-pub-sub-1.id}"
 route_table_id = "${aws_route_table.rt.id}"
 }
